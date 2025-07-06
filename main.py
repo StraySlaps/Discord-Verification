@@ -1,7 +1,5 @@
 import discord
 from discord.ext import commands
-import os
-from keep_alive import keep_alive
 
 intents = discord.Intents.default()
 intents.members = True
@@ -9,13 +7,13 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-GUILD_ID = 936959862955462717
-VERIFY_CHANNEL_ID = 938303446036148264
+GUILD_ID = 936959862955462717  # Replace with your server ID
+VERIFY_CHANNEL_ID = 938303446036148264  # Replace with your #verify channel ID
 VERIFY_ROLE_NAME = "Verified"
- 
-    @bot.event
-    async def on_ready():
-        print(f"Bot is ready. Logged in as {bot.user}")
+
+@bot.event
+async def on_ready():
+    print(f"Bot is ready. Logged in as {bot.user}")
  
     @bot.event
     async def on_member_join(member):
