@@ -10,8 +10,8 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 GUILD_ID = 936959862955462717
-    VERIFY_CHANNEL_ID = 938303446036148264
-    VERIFY_ROLE_NAME = "Verified"
+VERIFY_CHANNEL_ID = 938303446036148264
+VERIFY_ROLE_NAME = "Verified"
  
     @bot.event
     async def on_ready():
